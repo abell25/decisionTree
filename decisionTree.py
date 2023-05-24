@@ -97,6 +97,8 @@ class DecisionTree(object):
         print("{}train(X={}, y={})".format("  "*curr_depth, X, y))
         if len(X) == 1:
             return TreeLeaf(y[0])
+        if len(set(y)) == 1:
+            return TreeLeaf(y[0])
 
         split_feature_name, split_value, split_type = self.find_optimal_split(X, y, depth=curr_depth)
         if not split_feature_name:
