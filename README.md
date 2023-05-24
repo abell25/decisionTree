@@ -10,7 +10,7 @@ Run ./main.py
 
 
 Here is the learned decision tree:
-
+```
 Split on Number of legs >= 4
   Split on Color == Yellow
     Leaf: Lion
@@ -18,3 +18,4 @@ Split on Number of legs >= 4
   Split on Number of legs >= 2
     Leaf: Parrot
     Leaf: Snake
+```
